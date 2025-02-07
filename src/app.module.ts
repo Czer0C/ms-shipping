@@ -26,6 +26,6 @@ console.log(process.env.DATABASE_PASSWORD);
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(AuthMiddleware).forRoutes('inventory');
+    consumer.apply(AuthMiddleware).forRoutes('shipping');
   }
 }
